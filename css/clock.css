@@ -1,58 +1,90 @@
-
-* { margin:0; padding:0; }
-body {
-	padding: 2em 4em;
-	font-family: sans-serif;
-}
-h2 {
-	margin-top:1em;
-	font-size:120%;
-}
-xmp, pre {
-	padding:1em;
-}
-p {
-	line-height:1.5em;
-	padding-bottom:0.7em;
+/* If you want you can use font-face */
+@font-face {
+    font-family: '../assets/digital_clock/BebasNeueRegular';
+    src: url('../assets/fonts/BebasNeue-webfont.eot');
+    src: url('../assets/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../assets/fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../assets/fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-dd {
-	margin-left:2em; margin-bottom:0.5em;
+.container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-li {
-	margin-left:2em; margin-bottom:0.5em;
+.clock {
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #333;
+    color: #fff;
 }
 
-table {
-	border-collapse: collapse;
-	margin: 0.5em 1em 1em;
+#Date {
+    font-family: '../assets/fonts/BebasNeueRegular', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 0 0 5px #00c6ff;
 }
 
-td {
-		padding: 0.5em;
-		vertical-align:top;
+ul {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
 }
 
-.withBorder td {
-		border: 1px solid #ddd;
+ul li {
+    display: inline;
+    font-size: 10em;
+    text-align: center;
+    font-family: '../assets/fonts/BebasNeueRegular', Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 5px #00c6ff;
 }
 
-.leftRightPad {
-	padding-left:0.2em;
-	padding-right:0.2em;
-}
-.ads1 {
-	border:2px solid #eee;
-	margin:1em;
-	padding:4px;
-	float:right;
-}
-.ads2 {
-	border:2px solid #eee;
-	margin:1em;
-	padding:4px;
-	margin-top:4em;
-	text-align:center;
+#point {
+    position: relative;
+    -moz-animation: mymove 1s ease infinite;
+    -webkit-animation: mymove 1s ease infinite;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+/* Simple Animation */
+@-webkit-keyframes mymove {
+    0% {opacity: 1.0;
+    text-shadow: 0 0 20px #00c6ff;
+}
+
+50% {
+    opacity: 0;
+    text-shadow: none;
+}
+
+100% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #00c6ff;
+}	
+}
+
+@-moz-keyframes mymove {
+    0% {
+        opacity: 1.0;
+        text-shadow: 0 0 20px #00c6ff;
+    }
+
+    50% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    100% {
+        opacity: 1.0;
+        text-shadow: 0 0 20px #00c6ff;
+    };
+}
