@@ -1,6 +1,7 @@
 body, html { 
     height: 480px;
     width: 800px;
+    overflow: hidden;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 }
 
 .left, .right {
-    height: 480px;
+    height: 100%;
     padding: 5px 0;
     display: block;
 }
