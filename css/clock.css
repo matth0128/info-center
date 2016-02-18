@@ -10,29 +10,26 @@
     font-style: normal;
 }
 
-.container {
-    width: 300px;
-    margin: 0 auto;
-    overflow: hidden;
+#clock {
+    padding: 10px;
 }
 
-.clock {
-    width: 275px;
-    margin: 0 auto;
-    padding: 30px;
-    color: #fff;
-    float: left;
+#point {
+    position: relative;
+    -moz-animation: mymove 1s ease infinite;
+    -webkit-animation: mymove 1s ease infinite;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
-#Date {
+#date {
     font-family: '../assets/fonts/BebasNeueRegular', Arial, Helvetica, sans-serif;
     font-size: 24px;
     text-align: center;
-    text-shadow: 0 0 5px #00c6ff;
 }
 
 ul {
-    width: 275px;
+    width: 100%;
     margin: 0 auto;
     padding: 0px;
     list-style: none;
@@ -42,34 +39,25 @@ ul {
 ul li {
     display: inline;
     font-size: 3em;
-    text-align: center;
     font-family: '../assets/fonts/BebasNeueRegular', Arial, Helvetica, sans-serif;
-    text-shadow: 0 0 5px #00c6ff;
-}
-
-#point {
-    position: relative;
-    -moz-animation: mymove 1s ease infinite;
-    -webkit-animation: mymove 1s ease infinite;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 /* Simple Animation */
 @-webkit-keyframes mymove {
-    0% {opacity: 1.0;
-    text-shadow: 0 0 20px #00c6ff;
-}
+    0% {
+        opacity: 1.0;
+        text-shadow: 0 0 20px #00c6ff;
+    }
 
-50% {
-    opacity: 0;
-    text-shadow: none;
-}
+    50% {
+        opacity: 0;
+        text-shadow: none;
+    }
 
-100% {
-    opacity: 1.0;
-    text-shadow: 0 0 20px #00c6ff;
-}	
+    100% {
+        opacity: 1.0;
+        text-shadow: 0 0 20px #00c6ff;
+    }	
 }
 
 @-moz-keyframes mymove {
@@ -86,5 +74,5 @@ ul li {
     100% {
         opacity: 1.0;
         text-shadow: 0 0 20px #00c6ff;
-    };
+    }
 }
