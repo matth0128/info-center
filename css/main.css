@@ -1,5 +1,86 @@
+body, html { height: 100%; padding: 0; margin: 0; }
+
 body {
     background-color: black;
     font-family:sans-serif;
     color: white;
+}
+
+.left, .right {
+    height: 100%;
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.right {
+    width: 45%;
+    margin: 0 2.5%;
+    float: right;
+}
+
+.console {
+    width: 100%;
+    clear: both;
+    display: block;
+    margin-top: 225px;
+    text-align: center;
+    
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    background-color: transparent;
+    margin: 5px;
+    height: 55px;
+}
+
+button:active {
+    background-color: #fff;
+    color: #000;
+    border-color: rgba(255,255,255,.15) !important;
+}
+
+button:focus {
+    color: #fff;
+    background-color: rgba(255,255,255,.15) !important;
+}
+
+.clock {
+    width: 100% !important;
+    padding: 30px 0 !important;
+}
+.info {
+    position: absolute;
+    opacity: 0;
+}
+
+.item1 {
+    animation: fadeIn 750ms ease-in-out forwards;
+}
+
+.info:not(.item1):not(.fadeIn):not(.fadeOut) {
+    right: -999999999px;
+}
+
+.fadeOut {
+    opacity: 1;
+    animation: fadeOut 750ms ease-in-out forwards;
+}
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 750ms ease-in-out forwards;
+    animation-delay: 325ms;
+}
+
+@keyframes fadeOut {
+    100% { opacity: 0; }
+}
+@keyframes fadeIn {
+    100% { opacity: 100; }
 }
