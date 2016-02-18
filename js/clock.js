@@ -8,7 +8,7 @@ var newDate = new Date();
 // Extract the current date from Date object
 newDate.setDate(newDate.getDate());
 // Output the day, date, month and year   
-$('#Date').html(dayNames[newDate.getDay()] + "<br/>" + monthNames[newDate.getMonth()] + ' ' + newDate.getDate() + ' ' + newDate.getFullYear());
+$('#date').html(dayNames[newDate.getDay()] + "<br/>" + monthNames[newDate.getMonth()] + ' ' + newDate.getDate() + ' ' + newDate.getFullYear());
 
 setInterval( function() {
 	// Create a newDate() object and extract the seconds of the current time on the visitor's
