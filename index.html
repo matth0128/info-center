@@ -1,8 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <link rel="stylesheet" type="text/css" href="css/clock.css"/>
+        
         <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
         <script type="text/javascript" src="js/clock.js"></script>
         <script type="text/javascript" src="js/info-center.js"></script>
@@ -29,7 +33,9 @@
         </div>
         <div class="right">
             <div class="info item1">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96374.34884340006!2d-97.67418330257499!3d30.22099175667943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1455808989369" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div id="traffic-map">
+                    <iframe src="traffic-map.html"></iframe>
+                </div>
             </div>
             <div class="info item2">
                 <p>Weather</p>

@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function cycleSlides (e) {
         e.preventDefault();
 
-        // Get the clicked button's item number and use it to
-        // find the corresponding info panel
+        // Get the clicked button's item number and use it to find the corresponding info panel
         var n = e.target.getAttribute("item"),
         targetPanel = document.querySelector(".item" + n);
 
