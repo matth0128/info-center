@@ -1,6 +1,6 @@
 body, html { 
-    height: 480px;
-    width: 800px;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -31,6 +31,19 @@ body {
     clear: both;
     display: block;
     text-align: center;
+}
+
+#traffic-map {
+    height: 97%;
+    width: 82%;
+    position: fixed;
+}
+
+#traffic-map > iframe {
+    display: block;
+    height: 97%;
+    width: 82%;
+    border: none;
 }
 
 button {
