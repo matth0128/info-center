@@ -3,5 +3,11 @@
 ## Overview
 Simple information kiosk. This is designed for a 800x480 screen.
 
-## Installiation
-Simply clone the repository and open the "index.php" file with the web browser of your choice.
+## Configuration File
+The "js/config.js" file will need to be created for the system to function correctly. First simply copy the "example_config.js", and name it "config.js".
+
+`$cp js/example_config.js js/config.js`
+
+You will need the following API keys:
+-Google Maps API Key
+-Weather Underground Key
