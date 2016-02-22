@@ -9,5 +9,5 @@ The "js/config.js" file will need to be created for the system to function corre
 `$cp js/example_config.js js/config.js`
 
 You will need the following API keys:
--Google Maps API Key
--Weather Underground Key
+1. Google Maps API Key
+2. Weather Underground Key
