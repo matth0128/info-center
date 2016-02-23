@@ -1,6 +1,5 @@
-/* If you want you can use font-face */
 @font-face {
-    font-family: '../assets/digital_clock/BebasNeueRegular';
+    font-family: '../assets/fonts/BebasNeueRegular';
     src: url('../assets/fonts/BebasNeue-webfont.eot');
     src: url('../assets/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
          url('../assets/fonts/BebasNeue-webfont.woff') format('woff'),
