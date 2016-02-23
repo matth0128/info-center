@@ -20,10 +20,16 @@ body {
   text-transform: uppercase;
 }
 
-#weather h2 {
+#weather p {
+      color: #fff;
+  font-size: 25px;
+  font-weight: 10;
+}
+
+#weather h3 {
   margin: 0 0 8px;
   color: #fff;
-  font-size: 150px;
+  font-size: 75px;
   font-weight: 300;
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
