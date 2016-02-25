@@ -1,3 +1,9 @@
+#date {
+    padding: 40px 0px 0px 0px;
+    font-size: 24px;
+    text-align: center;
+}
+
 #clock {
     padding: 10px;
 }
@@ -8,11 +14,6 @@
     -webkit-animation: mymove 1s ease infinite;
     padding-left: 3px;
     padding-right: 3px;
-}
-
-#date {
-    font-size: 24px;
-    text-align: center;
 }
 
 ul {
