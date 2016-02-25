@@ -4,7 +4,7 @@ body {
 }
 
 #weather {
-    background: #FFFFFF;
+    color: #000000;
     border-radius: 15px 50px;
     width: 520px;
     height: 430px;
@@ -17,7 +17,22 @@ body {
     border-radius: 15px 50px;
     width: 520px;
     height: 300px;
-    color: #000000;
+}
+
+#weather .upperSubBox1 {
+    background: #FFFFFF;
+    border-radius: 15px 0px 0px 0px;
+    width: 320px;
+    height: 300px;
+    float: left;
+}
+
+#weather .upperSubBox2 {
+    background: #5F9EA0;
+    border-radius: 0px 50px 0px 0px;
+    width: 200px;
+    height: 300px;
+    float: right;
 }
 
 #weather .lowerBox {
@@ -29,7 +44,7 @@ body {
 #weather .lowerSubBox1 {
     background: #CCCCCC;
     border-radius: 0px 0px 0px 50px;
-    width: 260px;
+    width: 320px;
     height: 130px;
     float: left;
 }
@@ -37,45 +52,27 @@ body {
 #weather .lowerSubBox2 {
     background: #5F9EA0;
     border-radius: 0px 0px 15px 0px;
-    width: 260px;
+    width: 200px;
     height: 130px;
     float: right;
 }
 
 #location {
-    font-size: 30px;
+    padding: 20px 0px 0px 0px;
+    font-size: 40px;
 }
 
-/*
-#weather p {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 10;
+#temp {
+    padding: 30px 0px 0px 0px;
+    font-size: 70px;
 }
 
-#weather h3 {
-    margin: 0 0 8px;
-    color: #000000;
-    font-size: 75px;
-    font-weight: 300;
-    text-align: center;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+#high-low-temp {
+    padding: 30px 0px 0px 0px;
+    font-size: 60px;
 }
 
-#weather ul {
-    margin: 0;
-    padding: 0;
+#solar {
+    padding: 30px 0px 0px 0px;
+    font-size: 20px;
 }
-
-#weather li {
-    background: #FFFFFF;
-    background: rgba(255,255,255,0.90);
-    padding: 20px;
-    display: inline-block;
-    border-radius: 5px;
-}
-
-#weather .currently {
-    margin: 0 20px;
-}
-*/
