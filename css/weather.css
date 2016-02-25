@@ -63,14 +63,14 @@ body {
 }
 
 #temp {
-    margin: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
     font-size: 70px;
 }
 
 #temp img {
-    margin: 0px 0px 0px -25px;
-    height: 80px;
-    width: 80px;    
+    margin: 0px 0px -5px -25px;
+    height: 90px;
+    width: 90px;    
 }
 
 #high-low-temp {
@@ -79,9 +79,9 @@ body {
 }
 
 #high-low-temp img {
-    margin: -20px 0px -11px -25px;
-    height: 80px;
-    width: 80px;    
+    margin: -15px 0px -8px -17px;
+    height: 70px;
+    width: 70px;    
 }
 
 #sunrise {
