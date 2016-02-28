@@ -78,6 +78,10 @@ body {
     font-size: 50px;
 }
 
+.wx-icon {
+    -webkit-clip-path: inset(0px 0px 0px 0px);
+}
+
 #high-low-temp img {
     margin: -15px 0px -8px -17px;
     height: 70px;

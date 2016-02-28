@@ -9,17 +9,26 @@ function getWeather() {
 
     $.simpleWeather({
         location: configData.weather.location,
-        unit: 'f',
+        unit: "f",
         success: function(weather) {
             console.dir(weather);
             //Inject Weather Data
             $(".data-wx").each(function (){
-                wxValue = $(this).attr('data-wx');
-                $(this).html(weather[wxValue]);
+                wxValue = $(this).attr("data-wx");
+                if(wxValue.indexOf(".") >= 0){
+                    var value = weather;
+                    var strings = wxValue.split(".");
+                    for(i = 0; i < strings.length; i++){
+                        value = value[strings[i]];
+                    }
+                    $(this).html(value);
+                }else{
+                    $(this).html(weather[wxValue]);
+                }
             });
         },
         error: function(error) {
-            $("#weather").html('<p>'+error+'</p>');
+            $("#weather").html("<p>"+error+"</p>");
         }
     });
 }
