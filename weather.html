@@ -14,7 +14,8 @@
                     <div id="location">
                         <span class="data-wx" data-wx="city"></span>, <span class="data-wx" data-wx="region"></span>
                     </div><br>
-                    <span class="data-wx" data-wx="currently"></span><br>
+                    <div id="currentConditionsImage"></div><br>
+                    <span class="data-wx" data-wx="currently"></span><br><br>
                     <span class="data-wx" data-wx="updated"></span>
                 </div>
                 <div class="upperSubBox2">
@@ -25,20 +26,24 @@
                         <span class="data-wx" data-wx="high"></span><img class="wx-icon" src="assets/wx_icons/Degrees-Fahrenheit.svg"><br>
                         <span class="data-wx" data-wx="low"></span><img src="assets/wx_icons/Degrees-Fahrenheit.svg">
                     </div>
+                    <div id="wind">
+                        <img src="assets/wx_icons/Wind.svg">&nbsp;<span class="data-wx" data-wx="wind.speed"></span>&nbsp;<span class="data-wx" data-wx="wind.direction"></span>
+                    </div>
                 </div>
             </div>
             <div class="lowerBox">
                 <div class="lowerSubBox1">
-                    <span class="data-wx" data-wx="wind.direction"></span><br>
-                    <img src="assets/wx_icons/Wind.svg"><span class="data-wx" data-wx="wind.speed"></span>
+                    <div id="forecast1" class="forecast"></div>
+                    <div id="forecast2" class="forecast"></div>
+                    <div id="forecast3" class="forecast"></div>
                 </div>
                 <div class="lowerSubBox2">
                     <div id="sunrise">
-                        <img src="assets/wx_icons/Sunrise.svg">
+                        <img src="assets/wx_icons/Sunrise.svg"><br>
                         <span class="data-wx" data-wx="sunrise"></span>
                     </div>
                     <div id="sunset">
-                        <img src="assets/wx_icons/Sunset.svg">
+                        <img src="assets/wx_icons/Sunset.svg"><br>
                         <span class="data-wx" data-wx="sunset"></span>
                     </div>
                 </div>

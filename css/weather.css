@@ -56,58 +56,78 @@ body {
     height: 130px;
     float: right;
 }
-
+/** LOCATION **/
 #location {
     margin: 20px 0px 0px 0px;
     font-size: 40px;
 }
 
+/** CURRENT CONDITIONS IMAGE **/
+#currentConditionsImage {
+    height: 100px;
+}
+
+/** TEMPS **/
 #temp {
-    margin: 5px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     font-size: 70px;
 }
 
 #temp img {
-    margin: 0px 0px -5px -25px;
-    height: 90px;
-    width: 90px;    
+    vertical-align: top;
+    height: 25px;
 }
 
 #high-low-temp {
-    margin: 0px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     font-size: 50px;
 }
 
-.wx-icon {
-    -webkit-clip-path: inset(0px 0px 0px 0px);
-}
-
 #high-low-temp img {
-    margin: -15px 0px -8px -17px;
-    height: 70px;
-    width: 70px;    
+    vertical-align: top;
+    height: 20px;
 }
 
+/** WIND **/
+#wind {
+    margin: 20px 0px 0px 0px;
+    font-size: 30px;
+}
+
+#wind img {
+    vertical-align: middle;
+    height: 25px;
+}
+
+/** SOLAR **/
 #sunrise {
+    margin: 20px 0px 0px 0px;
     width: 100px;
     float: left;
     font-size: 20px;
 }
 
 #sunrise img{
-    margin: 0px 0px -10px 0px;
-    height: 80px;
-    width: 80px;
+    vertical-align: middle;
+    height: 40px;
 }
 
 #sunset {
+    padding: 20px 0px 0px 0px;
     width: 100px;
     float: right;
     font-size: 20px;
 }
 
 #sunset img{
-    margin: 0px 0px -10px 0px;
-    height: 80px;
-    width: 80px;
+    vertical-align: middle;
+    height: 40px;
+}
+
+/** FORECAST **/
+.forecast {
+    margin: 10px 0px 0px 5px;
+    float:left;
+    width: 100px;
+    font-size: 13px;
 }
