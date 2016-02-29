@@ -12,8 +12,7 @@
     position: relative;
     -moz-animation: mymove 1s ease infinite;
     -webkit-animation: mymove 1s ease infinite;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding: 0px 3px 0px 3px;
 }
 
 ul {
