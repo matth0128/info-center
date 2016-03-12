@@ -69,34 +69,34 @@ body {
 
 /** TEMPS **/
 #temp {
-    margin: 20px 0px 0px 0px;
-    font-size: 70px;
-}
-
-#temp img {
-    vertical-align: top;
-    height: 25px;
-}
-
-#high-low-temp {
     margin: 15px 0px 0px 0px;
     font-size: 50px;
 }
 
+#temp img {
+    vertical-align: top;
+    height: 18px;
+}
+
+#high-low-temp {
+    margin: 15px 0px 0px 0px;
+    font-size: 40px;
+}
+
 #high-low-temp img {
     vertical-align: top;
-    height: 20px;
+    height: 15px;
 }
 
 /** WIND **/
 #wind {
     margin: 15px 0px 0px 0px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #wind img {
     vertical-align: middle;
-    height: 25px;
+    height: 15px;
 }
 
 /** SOLAR **/
