@@ -28,6 +28,12 @@ function getWeather() {
           });
           //Inject Current Conditions Image
           $("#currentConditionsImage").html('<img src="'+weather.image+'">');
+          //Inject Daylight Duration
+          var sunrise = moment(weather.sunrise, "hh:mm A");
+          var sunset = moment(weather.sunset, "hh:mm A");
+          var duration = moment.duration(sunset.diff(sunrise));
+          var hours = Math.floor(duration.asHours())+"h "+moment.utc(sunset).format("mm")+"m";
+          $('#dayDuration').html(hours);
           //Inject Forecast Data
           var forecast_html;
           for(i = 0; i < weather.forecast.length; i++){

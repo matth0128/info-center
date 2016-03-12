@@ -79,7 +79,7 @@ body {
 }
 
 #high-low-temp {
-    margin: 20px 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
     font-size: 50px;
 }
 
@@ -90,7 +90,7 @@ body {
 
 /** WIND **/
 #wind {
-    margin: 20px 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
     font-size: 30px;
 }
 
@@ -104,24 +104,36 @@ body {
     margin: 20px 0px 0px 0px;
     width: 100px;
     float: left;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #sunrise img{
     vertical-align: middle;
-    height: 40px;
+    height: 30px;
 }
 
 #sunset {
     padding: 20px 0px 0px 0px;
     width: 100px;
     float: right;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-#sunset img{
+#sunset img {
     vertical-align: middle;
-    height: 40px;
+    height: 30px;
+}
+
+#duration {
+    padding: 20px 0px 0px 0px;
+    width: 200px;
+    float: left;
+    font-size: 15px;
+}
+
+#duration img {
+    vertical-align: middle;
+    height: 20px;
 }
 
 /** FORECAST **/
