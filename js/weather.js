@@ -32,7 +32,9 @@ function getWeather() {
           var sunrise = moment(weather.sunrise, "hh:mm A");
           var sunset = moment(weather.sunset, "hh:mm A");
           var duration = moment.duration(sunset.diff(sunrise));
-          var hours = Math.floor(duration.asHours())+"h "+moment.utc(sunset).format("mm")+"m";
+          var duration_hour = Math.floor(duration.asHours());
+          var duration_min = Math.floor(duration.asMinutes()) - (duration_hour * 60);
+          var hours = duration_hour+"h "+duration_min+"m";
           $('#dayDuration').html(hours);
           //Inject Forecast Data
           var forecast_html;
