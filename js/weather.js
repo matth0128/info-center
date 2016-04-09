@@ -36,6 +36,10 @@ function getWeather() {
           var duration_min = Math.floor(duration.asMinutes()) - (duration_hour * 60);
           var hours = duration_hour+"h "+duration_min+"m";
           $('#dayDuration').html(hours);
+          //Inject Wind Speed/Direction Icon
+          var wind_direction = weather.wind.direction.toLowerCase();
+          $("#windSpeedDirection").addClass("wi-from-"+wind_direction);
+
           //Inject Forecast Data
           var forecast_html;
           for(i = 0; i < weather.forecast.length; i++){
