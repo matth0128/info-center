@@ -1,6 +1,6 @@
 body {
     background: #000000;
-    font-family: '../assets/fonts/BebasNeueRegular', Arial, Helvetica, sans-serif;
+    font-family: '../font/BebasNeueRegular', Arial, Helvetica, sans-serif;
 }
 
 #weather {
@@ -64,8 +64,14 @@ body {
 
 /** CURRENT CONDITIONS IMAGE **/
 #currentConditionsImage {
-    height: 100px;
+    height: 120px;
 }
+
+#currentConditionsImage img {
+    position: inherit;
+    clip: rect(0px,160px, 100px,0px);
+}
+
 
 /** TEMPS **/
 #temp {

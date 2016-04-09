@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/weather.css"/>
+        <link rel="stylesheet" type="text/css" href="css/weather-icons.css"/>
         <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
         <script type="text/javascript" src="js/moment.min.js"></script>
         <script type="text/javascript" src="js/config.js"></script>
@@ -15,20 +16,20 @@
                     <div id="location">
                         <span class="data-wx" data-wx="city"></span>, <span class="data-wx" data-wx="region"></span>
                     </div><br>
-                    <div id="currentConditionsImage"></div><br><br>
+                    <div id="currentConditionsImage"></div><br>
                     <span class="data-wx" data-wx="currently"></span><br><br>
                     <span class="data-wx" data-wx="updated"></span>
                 </div>
                 <div class="upperSubBox2">
                     <div id="temp">
-                        <span class="data-wx" data-wx="temp"></span><img src="assets/wx_icons/Degrees-Fahrenheit.svg">
+                        <span class="data-wx" data-wx="temp"></span><i class="wi wi-fahrenheit"></i>
                     </div>
                     <div id ="high-low-temp">
-                        <span class="data-wx" data-wx="high"></span><img class="wx-icon" src="assets/wx_icons/Degrees-Fahrenheit.svg"><br>
-                        <span class="data-wx" data-wx="low"></span><img src="assets/wx_icons/Degrees-Fahrenheit.svg">
+                        <span class="data-wx" data-wx="high"></span><i class="wi wi-fahrenheit"></i><br>
+                        <span class="data-wx" data-wx="low"></span><i class="wi wi-fahrenheit"></i>
                     </div>
                     <div id="wind">
-                        <img src="assets/wx_icons/Wind.svg">&nbsp;<span class="data-wx" data-wx="wind.speed"></span>&nbsp;<span class="data-wx" data-wx="wind.direction"></span>
+                        <i class="wi wi-wind-direction"></i>&nbsp;<span class="data-wx" data-wx="wind.speed"></span>&nbsp;<span class="data-wx" data-wx="wind.direction"></span>
                     </div>
                 </div>
             </div>
@@ -40,15 +41,15 @@
                 </div>
                 <div class="lowerSubBox2">
                     <div id="sunrise">
-                        <img src="assets/wx_icons/Sunrise.svg"><br>
+                        <i class="wi wi-sunrise"></i><br>
                         <span class="data-wx" data-wx="sunrise"></span>
                     </div>
                     <div id="sunset">
-                        <img src="assets/wx_icons/Sunset.svg"><br>
+                        <i class="wi wi-sunset"></i><br>
                         <span class="data-wx" data-wx="sunset"></span>
                     </div>
                     <div id="duration">
-                        <img src="assets/wx_icons/Sun.svg">
+                        <i class="wi wi-day-sunny"></i>
                         <span id="dayDuration" class="dayDuration"></span>
                     </div>
                 </div>
