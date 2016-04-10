@@ -27,7 +27,7 @@ function getWeather() {
                 }
             });
             //Inject Current Conditions Image
-            $("#currentConditionsIcon").addClass(convertYahooWeatherCode(weather.code));
+            $("#currentConditionsIcon").addClass(convertWeatherConditionCode(weather.code));
             //Inject Daylight Duration
             var sunrise = moment(weather.sunrise, "hh:mm A");
             var sunset = moment(weather.sunset, "hh:mm A");
@@ -39,6 +39,8 @@ function getWeather() {
             //Inject Wind Speed/Direction Icon
             var wind_direction = weather.wind.direction.toLowerCase();
             $("#windSpeedDirection").addClass("wi-towards-"+wind_direction);
+            //Inject Pressure Rising/Steady/Falling Icon
+            $("#pressure_state").addClass(convertBarometerCode(weather.rising));
             //Inject Forecast Data
             var forecast_html;
             for(i = 0; i < weather.forecast.length; i++){
@@ -46,7 +48,7 @@ function getWeather() {
                 forecast_html = forecast_data.date+'<br>';
                 forecast_html += forecast_data.day+'<br>';
                 forecast_html += forecast_data.high+' /'+forecast_data.low+'<br>';
-                forecast_html += '<i class="wi '+convertYahooWeatherCode(forecast_data.code)+'"></i><br>';
+                forecast_html += '<i class="wi '+convertWeatherConditionCode(forecast_data.code)+'"></i><br>';
                 forecast_html += forecast_data.text;
                 $('#forecast'+i).html(forecast_html);
             }
@@ -57,9 +59,19 @@ function getWeather() {
     });
 }
 
-// Conver Yahoo Weather Code
+//Convert Yahoo Pressure Code Rising/Steady/Falling
+function convertBarometerCode(code){
+    switch(code){
+        case "0": return "wi-direction-left";
+        case "1": return "wi-direction-up";
+        case "2": return "wi-directio-down";
+        default: return "wi-na";
+    }    
+}
+
+// Conver Weather Condition Code
 //***** Convert the Yahoo Weather API code to the corresponding Weather Icon. *****
-function convertYahooWeatherCode(code) {
+function convertWeatherConditionCode(code) {
     switch(code){
         case "0": return "wi-tornado"; //tornado
         case "1": return "wi-hurricane"; //tropical storm 
