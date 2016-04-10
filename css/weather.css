@@ -3,59 +3,36 @@ body {
     font-family: '../font/BebasNeueRegular', Arial, Helvetica, sans-serif;
 }
 
-#weather {
+/********** WEATHER BOX **********/
+/***** BOX GRID *****/
+#weather_box {
     color: #000000;
-    border-radius: 15px 50px;
+    border-radius: 15px 0px 50px 0px;
     width: 520px;
     height: 430px;
-    margin: 0px auto;
     text-align: center;
-    vertical-align: middle;
 }
 
-#weather .upperBox {
-    border-radius: 15px 50px;
-    width: 520px;
-    height: 300px;
-}
-
-#weather .upperSubBox1 {
+#weather_box .box1 {
     background: #FFFFFF;
     border-radius: 15px 0px 0px 0px;
-    width: 320px;
     height: 300px;
-    float: left;
 }
 
-#weather .upperSubBox2 {
-    background: #5F9EA0;
-    border-radius: 0px 50px 0px 0px;
-    width: 200px;
-    height: 300px;
-    float: right;
-}
-
-#weather .lowerBox {
-    border-radius: 0px 0px 15px 50px;
-    width: 520px;
-    height: 130px;
-}
-
-#weather .lowerSubBox1 {
+#weather_box .box2 {
     background: #CCCCCC;
     border-radius: 0px 0px 0px 50px;
-    width: 320px;
     height: 130px;
-    float: left;
 }
 
-#weather .lowerSubBox2 {
+#weather_box .box3 {
     background: #5F9EA0;
-    border-radius: 0px 0px 15px 0px;
-    width: 200px;
-    height: 130px;
-    float: right;
+    border-radius: 0px 50px 15px 0px;
+    height: 430px;
 }
+/***** END BOX GRID *****/
+
+/***** BOX 1 *****/
 /** LOCATION **/
 #location {
     margin: 20px 0px 0px 0px;
@@ -65,83 +42,40 @@ body {
 /** CURRENT CONDITIONS IMAGE **/
 #currentConditionsIcon {
     height: 100px;
-    vertical-align: middle;
     font-size: 60px;
 }
+/***** END BOX 1 *****/
 
+/***** BOX 2 *****/
+/** FORECAST **/
+.forecast {
+    margin: 10px 0px 0px 0px;
+    font-size: 13px;
+}
+/***** END BOX 2 *****/
+
+/***** BOX 3 *****/
 /** TEMPS **/
 #temp {
-    margin: 15px 0px 0px 0px;
     font-size: 50px;
 }
 
-#temp img {
-    vertical-align: top;
-    height: 18px;
-}
-
 #high-low-temp {
-    margin: 15px 0px 0px 0px;
     font-size: 40px;
-}
-
-#high-low-temp img {
-    vertical-align: top;
-    height: 15px;
 }
 
 /** WIND **/
 #wind {
-    margin: 15px 0px 0px 0px;
     font-size: 20px;
 }
 
-#wind img {
-    vertical-align: middle;
-    height: 15px;
-}
-
 /** SOLAR **/
-#sunrise {
-    margin: 20px 0px 0px 0px;
-    width: 100px;
-    float: left;
+#solar-times {
     font-size: 15px;
-}
-
-#sunrise img{
-    vertical-align: middle;
-    height: 30px;
-}
-
-#sunset {
-    padding: 20px 0px 0px 0px;
-    width: 100px;
-    float: right;
-    font-size: 15px;
-}
-
-#sunset img {
-    vertical-align: middle;
-    height: 30px;
 }
 
 #duration {
-    padding: 20px 0px 0px 0px;
-    width: 200px;
-    float: left;
     font-size: 15px;
 }
-
-#duration img {
-    vertical-align: middle;
-    height: 20px;
-}
-
-/** FORECAST **/
-.forecast {
-    margin: 10px 0px 0px 5px;
-    float:left;
-    width: 100px;
-    font-size: 15px;
-}
+/***** END BOX 3 *****/
+/********** END WEATHER BOX **********/

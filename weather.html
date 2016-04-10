@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/weather.css"/>
         <link rel="stylesheet" type="text/css" href="css/weather-icons.css"/>
         <link rel="stylesheet" type="text/css" href="css/weather-icons-wind.css"/>
@@ -18,47 +18,49 @@
         <script type="text/javascript" src="js/weather.js"></script>    
     </head>
     <body>
-        <div id="weather">
-            <div class="upperBox">
-                <div class="upperSubBox1">
-                    <div id="location">
-                        <span class="data-wx" data-wx="city"></span>, <span class="data-wx" data-wx="region"></span>
-                    </div><br>
-                    <i id="currentConditionsIcon" class="wi"></i><br>
-                    <span class="data-wx" data-wx="currently"></span><br><br>
-                    <span class="data-wx" data-wx="updated"></span>
-                </div>
-                <div class="upperSubBox2">
-                    <div id="temp">
-                        <span class="data-wx" data-wx="temp"></span><i class="wi wi-fahrenheit"></i>
+        <div id="weather_box" class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row box1">
+                        <div id="location" class="row">
+                            <span class="data-wx" data-wx="city"></span>, <span class="data-wx" data-wx="region"></span>
+                        </div>
+                        <div class="row"><i id="currentConditionsIcon" class="row wi"></i></div>
+                        <div class="row data-wx" data-wx="currently"></div>
+                        <div class="row data-wx" data-wx="updated"></div>
                     </div>
-                    <div id ="high-low-temp">
-                        <span class="data-wx" data-wx="high"></span><i class="wi wi-fahrenheit"></i><br>
-                        <span class="data-wx" data-wx="low"></span><i class="wi wi-fahrenheit"></i>
-                    </div>
-                    <div id="wind">
-                        <i id="windSpeedDirection" class="wi wi-wind-direction"></i>&nbsp;<span class="data-wx" data-wx="wind.speed"></span>&nbsp;<span class="data-wx" data-wx="wind.direction"></span>
+                    <div class="row box2">
+                        <div id="forecast1" class="col-sm-4 forecast"></div>
+                        <div id="forecast2" class="col-sm-4 forecast"></div>
+                        <div id="forecast3" class="col-sm-4 forecast"></div>
                     </div>
                 </div>
-            </div>
-            <div class="lowerBox">
-                <div class="lowerSubBox1">
-                    <div id="forecast1" class="forecast"></div>
-                    <div id="forecast2" class="forecast"></div>
-                    <div id="forecast3" class="forecast"></div>
-                </div>
-                <div class="lowerSubBox2">
-                    <div id="sunrise">
-                        <i class="wi wi-sunrise"></i><br>
-                        <span class="data-wx" data-wx="sunrise"></span>
-                    </div>
-                    <div id="sunset">
-                        <i class="wi wi-sunset"></i><br>
-                        <span class="data-wx" data-wx="sunset"></span>
-                    </div>
-                    <div id="duration">
-                        <i class="wi wi-day-sunny"></i>
-                        <span id="dayDuration" class="dayDuration"></span>
+                <div class="col-sm-4">
+                    <div class="row box3">
+                        <div id="temp" class="row">
+                            <span class="data-wx" data-wx="temp"></span><i class="wi wi-fahrenheit"></i>
+                        </div>
+                        <div id ="high-low-temp" class="row">
+                            <span class="data-wx" data-wx="high"></span><i class="wi wi-fahrenheit"></i><br>
+                            <span class="data-wx" data-wx="low"></span><i class="wi wi-fahrenheit"></i>
+                        </div>
+                        <div id="wind" class="row">
+                            <i id="windSpeedDirection" class="wi wi-wind-direction"></i>&nbsp;<span class="data-wx" data-wx="wind.speed"></span>&nbsp;<span class="data-wx" data-wx="wind.direction"></span>
+                        </div>
+                        <div id="solar-times" class="row">
+                            <div class="col-sm-6">
+                                <i class="wi wi-sunrise"></i><br>
+                                <span class="data-wx" data-wx="sunrise"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="wi wi-sunset"></i><br>
+                                <span class="data-wx" data-wx="sunset"></span>
+                            </div>
+                        </div>
+                        <div id="duration" class="row">
+                            <i class="wi wi-day-sunny"></i>
+                            <span id="dayDuration" class="dayDuration"></span>
+                        </div>
                     </div>
                 </div>
             </div>
