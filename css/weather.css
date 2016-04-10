@@ -40,8 +40,13 @@ body {
 }
 
 /** CURRENT CONDITIONS IMAGE **/
-#currentConditionsIcon {
+#current-conditions-icon {
     font-size: 60px;
+}
+
+/** CURRENT CONDITIONS TEXT **/
+#current-conditions-text {
+    font-size: 20px;
 }
 
 /** HIGH/LOW TEMP **/

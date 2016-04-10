@@ -27,7 +27,7 @@ function getWeather() {
                 }
             });
             //Inject Current Conditions Image
-            $("#currentConditionsIcon").addClass(convertWeatherConditionCode(weather.code));
+            $("#current-conditions-icon").addClass(convertWeatherConditionCode(weather.code));
             //Inject Daylight Duration
             var sunrise = moment(weather.sunrise, "hh:mm A");
             var sunset = moment(weather.sunset, "hh:mm A");
@@ -35,12 +35,12 @@ function getWeather() {
             var duration_hour = Math.floor(duration.asHours());
             var duration_min = Math.floor(duration.asMinutes()) - (duration_hour * 60);
             var hours = duration_hour+"h "+duration_min+"m";
-            $('#dayDuration').html(hours);
+            $('#day-duration').html(hours);
             //Inject Wind Speed/Direction Icon
             var wind_direction = weather.wind.direction.toLowerCase();
-            $("#windSpeedDirection").addClass("wi-towards-"+wind_direction);
+            $("#wind-speed-direction").addClass("wi-towards-"+wind_direction);
             //Inject Pressure Rising/Steady/Falling Icon
-            $("#pressure_state").addClass(convertBarometerCode(weather.rising));
+            $("#pressure-state").addClass(convertBarometerCode(weather.rising));
             //Inject Forecast Data
             var forecast_html;
             for(i = 0; i < weather.forecast.length; i++){
