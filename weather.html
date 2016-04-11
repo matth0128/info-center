@@ -47,25 +47,21 @@
                         </div>
                     </div>
                     <div class="row box2">
-                        <div id="forecast1" class="col-sm-4 col-xs-4 forecast"></div>
-                        <div id="forecast2" class="col-sm-4 col-xs-4 forecast"></div>
-                        <div id="forecast3" class="col-sm-4 col-xs-4 forecast"></div>
+                        <div id="temp" class="col-sm-5 col-xs-5">
+                            <span class="data-wx" data-wx="temp"></span><i class="wi wi-fahrenheit"></i>
+                        </div>
+                        <div id="atomsphere" class="col-sm-7 col-xs-7">
+                            <i id="wind-speed-direction" class="wi wi-wind-direction"></i>&nbsp;<span class="data-wx" data-wx="wind.speed"></span>&nbsp;<span class="data-wx" data-wx="wind.direction"></span><br>
+                            <i class="wi wi-humidity"></i>&nbsp;<span class="data-wx" data-wx="humidity"></span>%<br>
+                            <i class="wi wi-barometer"></i>&nbsp;<span class="data-wx" data-wx="pressure"></span>&nbsp;<i id="pressure-state" class="wi"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-xs-4">
                     <div class="row box3">
-                        <div id="temp" class="row">
-                            <span class="data-wx" data-wx="temp"></span><i class="wi wi-fahrenheit"></i>
-                        </div>
-                        <div id="wind" class="row">
-                            <i id="wind-speed-direction" class="wi wi-wind-direction"></i>&nbsp;<span class="data-wx" data-wx="wind.speed"></span>&nbsp;<span class="data-wx" data-wx="wind.direction"></span>
-                        </div>
-                        <div id="humidity" class="row">
-                            <i class="wi wi-humidity"></i>&nbsp;<span class="data-wx" data-wx="humidity"></span>%
-                        </div>
-                        <div id="pressure" class="row">
-                            <i class="wi wi-barometer"></i>&nbsp;<span class="data-wx" data-wx="pressure"></span>&nbsp;<i id="pressure-state" class="wi"></i>
-                        </div>
+                        <div id="forecast1" class="row forecast"></div>
+                        <div id="forecast2" class="row forecast"></div>
+                        <div id="forecast3" class="row forecast"></div>    
                     </div>
                 </div>
             </div>

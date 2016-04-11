@@ -35,18 +35,18 @@ body {
 /***** BOX 1 *****/
 /** LOCATION **/
 #location {
-    margin: 20px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     font-size: 40px;
 }
 
 /** CURRENT CONDITIONS IMAGE **/
 #current-conditions-icon {
-    font-size: 60px;
+    font-size: 65px;
 }
 
 /** CURRENT CONDITIONS TEXT **/
 #current-conditions-text {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /** HIGH/LOW TEMP **/
@@ -61,32 +61,25 @@ body {
 /***** END BOX 1 *****/
 
 /***** BOX 2 *****/
-/** FORECAST **/
-.forecast {
-    margin: 10px 0px 0px 0px;
-    font-size: 13px;
+/** TEMP **/
+#temp {
+    margin: 35px 0px 0px 0px;
+    font-size: 50px;
+}
+
+/** ATOMSPHERE **/
+#atomsphere {
+    margin: 25px 0px 0px 0px;
+    font-size: 20px;
 }
 /***** END BOX 2 *****/
 
 /***** BOX 3 *****/
-/** TEMP **/
-#temp {
-    font-size: 50px;
-}
-
-/** WIND **/
-#wind {
-    font-size: 30px;
-}
-
-/** HUMIDITY **/
-#humidity {
-    font-size: 30px;
-}
-
-/** PRESSURE **/
-#pressure {
-    font-size:30px;
+/** FORECAST **/
+.forecast {
+    margin: 15px 0px 0px 0px;
+    height: 115px;
+    font-size: 16px;
 }
 /***** END BOX 3 *****/
 /********** END WEATHER BOX **********/
