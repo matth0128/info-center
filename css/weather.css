@@ -20,7 +20,7 @@ body {
     color: #000000;
     border-radius: 15px 0px 50px 0px;
     width: 520px;
-    height: 430px;
+    height: 450px;
     text-align: center;
 }
 
@@ -33,13 +33,13 @@ body {
 #weather_box .box2 {
     background: #CCCCCC;
     border-radius: 0px 0px 0px 50px;
-    height: 130px;
+    height: 150px;
 }
 
 #weather_box .box3 {
     background: #5F9EA0;
     border-radius: 0px 50px 15px 0px;
-    height: 430px;
+    height: 450px;
 }
 /***** END BOX GRID *****/
 
