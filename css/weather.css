@@ -73,7 +73,7 @@ body {
 /***** BOX 2 *****/
 /** TEMP **/
 #temp {
-    margin: 10px 0px 0px 0px;
+    padding: 10px 0px 0px 30px;
     font-size: 82px;
 }
 
