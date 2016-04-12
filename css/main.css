@@ -70,6 +70,19 @@ body {
     border: none;
 }
 
+/* CALENDAR */
+#calendar {
+    height: 97%;
+    width: 82%;
+    position: fixed;
+}
+#calendar > iframe {
+    display: block;
+    height: 97%;
+    width: 82%;
+    border: none;
+}
+
 /* BUTTONS */
 button {
     display: inline-block;
