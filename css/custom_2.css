@@ -1,7 +1,6 @@
 /* Custom calendar elements */
 
 .custom-calendar-wrap {
-	margin: 10px auto;
 	position: relative;
 	overflow: hidden;
 }
@@ -35,7 +34,7 @@
 .custom-header {
 	background: #fff;
 	padding: 5px 10px 10px 20px;
-	height: 70px;
+	height: 50px;
 	position: relative;
 	border-top: 5px solid #ef4f69;
 	border-bottom: 1px solid #ddd;
@@ -64,7 +63,7 @@
 	position: absolute;
 	top: 17px;
 	width: 30px;
-	height: 30px;
+	height: 1px;
 	color: transparent;
 	cursor: pointer;
 	margin: 0 1px;
