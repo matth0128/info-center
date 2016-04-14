@@ -8,10 +8,15 @@ function loadConfig(){
         configData.googleMap.lat = 30.221048;
         configData.googleMap.lng = -97.754094;
         configData.googleMap.zoom = 11;
-    
-    //Default Weather Location ["City, ST"]
+
+
+    //Weather Underground API Key
     configData.weather = {};
-    configData.weather.location = "Buda, TX";
+    configData.weather.wundergroundAPIKey = "9fda3bb9f913d7a5";
+        
+    //Default Weather Location
+    configData.weather.city = "Buda"; //City
+    configData.weather.state = "TX"; //State Abbreivation
 
     //Return Data
     return configData;
