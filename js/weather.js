@@ -7,64 +7,76 @@ function getWeather() {
     //Load Config Values
     configData = loadConfig();
 
-    $.simpleWeather({
-        location: configData.weather.location,
-        unit: 'f',
-        success: function(weather) {
-            console.dir(weather);
-            //Inject Weather Data
-            $('.data-wx').each(function (){
-                wxValue = $(this).attr('data-wx');
-                if(wxValue.indexOf('.') >= 0){
-                    var value = weather;
-                    var strings = wxValue.split('.');
-                    for(i = 0; i < strings.length; i++){
-                        value = value[strings[i]];
-                    }
-                    $(this).html(value);
-                }else{
-                    $(this).html(weather[wxValue]);
+    //Query Weather Underground API
+    var wundergroundAPI = "http://api.wunderground.com/api/"+configData.weather.wundergroundAPIKey+"/conditions/q/"+configData.weather.state+"/"+configData.weather.city+".json";
+    var weatherData = {};
+    $.getJSON(wundergroundAPI).done(function(data) {               
+        weather = normalizeWeatherData(data.current_observation);
+        console.dir(weather);
+        //Inject Weather Data
+        $('.data-wx').each(function () {
+            wxValue = $(this).attr('data-wx');
+            if(wxValue.indexOf('.') >= 0){
+                var value = weather;
+                var strings = wxValue.split('.');
+                for(i = 0; i < strings.length; i++){
+                    value = value[strings[i]];
                 }
-            });
-            //Inject Current Conditions Image
-            $("#current-conditions-icon").addClass(convertWeatherConditionCode(weather.code));
-            //Inject Daylight Duration
-            var sunrise = moment(weather.sunrise, "hh:mm A");
-            var sunset = moment(weather.sunset, "hh:mm A");
-            var duration = moment.duration(sunset.diff(sunrise));
-            var duration_hour = Math.floor(duration.asHours());
-            var duration_min = Math.floor(duration.asMinutes()) - (duration_hour * 60);
-            var hours = duration_hour+"h "+duration_min+"m";
-            $('#day-duration').html(hours);
-            //Inject Wind Speed/Direction Icon
-            var wind_direction = weather.wind.direction.toLowerCase();
-            $("#wind-speed-direction").addClass("wi-towards-"+wind_direction);
-            //Inject Pressure Rising/Steady/Falling Icon
-            $("#pressure-state").addClass(convertBarometerCode(weather.rising));
-            //Inject Forecast Data
-            var forecast_html;
-            for(i = 0; i < weather.forecast.length; i++){
-                forecast_data = weather.forecast[i];
-                forecast_html = forecast_data.date+'<br>';
-                forecast_html += forecast_data.day+'<br>';
-                forecast_html += forecast_data.high+' /'+forecast_data.low+'<br>';
-                forecast_html += '<i class="wi '+convertWeatherConditionCode(forecast_data.code)+'"></i><br>';
-                forecast_html += forecast_data.text;
-                $('#forecast'+i).html(forecast_html);
+                $(this).html(value);
+            }else{
+                $(this).html(weather[wxValue]);
             }
-        },
-        error: function(error) {
-            $('#weather').html('<p>'+error+'</p>');
-        }
+        });
+        //Inject Current Conditions Image
+        //$("#current-conditions-icon").addClass(convertWeatherConditionCode(weather.code));
+        //Inject Daylight Duration
+        //var sunrise = moment(weather.sunrise, "hh:mm A");
+        //var sunset = moment(weather.sunset, "hh:mm A");
+        //var duration = moment.duration(sunset.diff(sunrise));
+        //var duration_hour = Math.floor(duration.asHours());
+        //var duration_min = Math.floor(duration.asMinutes()) - (duration_hour * 60);
+        //var hours = duration_hour+"h "+duration_min+"m";
+        //$('#day-duration').html(hours);
+        //Inject Wind Speed/Direction Icon
+        var wind_direction = weather.wind_dir.toLowerCase();
+        $("#wind-speed-direction").addClass("wi-towards-"+wind_direction);
+        //Inject Pressure Rising/Steady/Falling Icon
+        $("#pressure-state").addClass(convertBarometerCode(weather.pressure_trend));
+        //Inject Forecast Data
+        //var forecast_html;
+        //for(i = 0; i < weather.forecast.length; i++) {
+        //    forecast_data = weather.forecast[i];
+        //    forecast_html = forecast_data.date+'<br>';
+        //    forecast_html += forecast_data.day+'<br>';
+        //    forecast_html += forecast_data.high+' /'+forecast_data.low+'<br>';
+        //    forecast_html += '<i class="wi '+convertWeatherConditionCode(forecast_data.code)+'"></i><br>';
+        //    forecast_html += forecast_data.text;
+        //    $('#forecast'+i).html(forecast_html);
+        //}        
     });
 }
 
+function normalizeWeatherData(data){
+    //Strip Decimal from tempature value
+    data.temp = parseInt(data.temp_f);
+
+    //Normalize Wind Direction String
+    switch(data.wind_dir) {
+        case "North": data.wind_dir = "N";
+        case "South": data.wind_dir = "S";
+        case "East": data.wind_dir = "E";
+        case "West": data.wind_dir = "W";
+    }
+    
+    return data;
+}
+
 //Convert Yahoo Pressure Code Rising/Steady/Falling
-function convertBarometerCode(code){
-    switch(code){
+function convertBarometerCode(code) {
+    switch(code) {
         case "0": return "wi-direction-left";
-        case "1": return "wi-direction-up";
-        case "2": return "wi-directio-down";
+        case "+": return "wi-direction-up";
+        case "-": return "wi-directio-down";
         default: return "wi-na";
     }    
 }

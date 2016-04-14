@@ -22,12 +22,12 @@
             <div class="row">
                 <div class="col-sm-8 col-xs-8">
                     <div class="row box1">
-                        <div class="row data-wx" data-wx="updated"></div>
+                        <div class="row data-wx" data-wx="observation_time"></div>
                         <div id="location" class="row">
-                            <span class="data-wx" data-wx="city"></span>, <span class="data-wx" data-wx="region"></span>
+                            <span class="data-wx" data-wx="display_location.full"></span>
                         </div>
                         <div class="row"><i id="current-conditions-icon" class="row wi"></i></div>
-                        <div id="current-conditions-text" class="row data-wx" data-wx="currently"></div>
+                        <div id="current-conditions-text" class="row data-wx" data-wx="icon"></div>
                         <div id="high-low-temp" class="row">
                             <span class="data-wx" data-wx="high"></span><i class="wi wi-fahrenheit"></i>&nbsp;/&nbsp;<span class="data-wx" data-wx="low"></span><i class="wi wi-fahrenheit"></i>
                         </div>                        
@@ -51,9 +51,9 @@
                             <span class="data-wx" data-wx="temp"></span><i class="wi wi-fahrenheit"></i>
                         </div>
                         <div id="atomsphere" class="col-sm-7 col-xs-7">
-                            <i id="wind-speed-direction" class="wi wi-wind-direction"></i>&nbsp;<span class="data-wx" data-wx="wind.speed"></span>&nbsp;<span class="data-wx" data-wx="wind.direction"></span><br>
-                            <i class="wi wi-humidity"></i>&nbsp;<span class="data-wx" data-wx="humidity"></span>%<br>
-                            <i class="wi wi-barometer"></i>&nbsp;<span class="data-wx" data-wx="pressure"></span>&nbsp;<i id="pressure-state" class="wi"></i>
+                            <i id="wind-speed-direction" class="wi wi-wind-direction"></i>&nbsp;<span class="data-wx" data-wx="wind_mph"></span>&nbsp;<span class="data-wx" data-wx="wind_dir"></span><br>
+                            <i class="wi wi-humidity"></i>&nbsp;<span class="data-wx" data-wx="relative_humidity"></span><br>
+                            <i class="wi wi-barometer"></i>&nbsp;<span class="data-wx" data-wx="pressure_mb"></span>&nbsp;<i id="pressure-state" class="wi"></i>
                         </div>
                     </div>
                 </div>
