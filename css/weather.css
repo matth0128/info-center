@@ -66,14 +66,14 @@ body {
 
 /** SOLAR **/
 #solar-times {
-    font-size: 20px;
+    font-size: 25px;
 }
 /***** END BOX 1 *****/
 
 /***** BOX 2 *****/
 /** TEMP **/
 #temp {
-    padding: 10px 0px 0px 30px;
+    padding: 15px 0px 0px 30px;
     font-size: 82px;
 }
 
@@ -87,9 +87,8 @@ body {
 /***** BOX 3 *****/
 /** FORECAST **/
 .forecast {
-    margin: 10px 0px 0px 0px;
-    height: 125px;
-    font-size: 18px;
+    margin: 15px 0px 0px 0px;
+    font-size: 20px;
 }
 /***** END BOX 3 *****/
 /********** END WEATHER BOX **********/
