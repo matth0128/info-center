@@ -72,8 +72,8 @@ function getWeather() {
         var forecast_data;
         for(i = 0; i < forecast.length; i++) {
             forecast_data = forecast[i];
-            forecast_html = forecast_data.date.monthname_short+" "+forecast_data.date.day+"<br>";
-            forecast_html = forecast_data.date.weekday+"<br>";
+            console.log(forecast_data);
+            forecast_html = forecast_data.date.weekday+" "+forecast_data.date.monthname_short+" "+forecast_data.date.day+"<br>";
             forecast_html += forecast_data.high.fahrenheit+" /"+forecast_data.low.fahrenheit+"<br>";
             forecast_html += "<i class='wi "+convertWeatherConditionIconCode(forecast_data.icon)+"'></i><br>";
             forecast_html += forecast_data.conditions;
