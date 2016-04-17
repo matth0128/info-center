@@ -12,7 +12,7 @@ function loadConfig(){
 
     //Weather Underground API Key
     configData.weather = {};
-    configData.weather.wundergroundAPIKey = "9fda3bb9f913d7a5";
+    configData.weather.wundergroundAPIKey = "YOUR API KEY";
         
     //Default Weather Location
     configData.weather.city = "Buda"; //City
