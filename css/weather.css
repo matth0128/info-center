@@ -88,6 +88,7 @@ body {
 /** FORECAST **/
 .forecast {
     margin: 15px 0px 0px 0px;
+    height: 130px;
     font-size: 20px;
 }
 /***** END BOX 3 *****/

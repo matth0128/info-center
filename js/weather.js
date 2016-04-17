@@ -44,12 +44,11 @@ function getWeather() {
         var solar = data.sun_phase;
         var lunar = data.moon_phase;
         //Get Sunrise/Sunset Timestamps
-        //Inject Sunrize/Sunset
         var sunrise = moment(solar.sunrise.hour+":"+solar.sunrise.minute, "HH:mm");
         var sunset = moment(solar.sunset.hour+":"+solar.sunset.minute, "HH:mm");
         //Inject Sunrize/Sunset
-        $("#sunrise").html(moment(sunrise).format("hh:mm A"));
-        $("#sunset").html(moment(sunset).format("hh:mm A"));
+        $("#sunrise").html(moment(sunrise).format("h:mm A"));
+        $("#sunset").html(moment(sunset).format("h:mm A"));
         //Inject Daylight Duration
         var duration = moment.duration(sunset.diff(sunrise));
         var duration_hour = Math.floor(duration.asHours());
@@ -97,7 +96,7 @@ function normalizeWeatherData(data){
     return data;
 }
 
-//Convert Yahoo Pressure Code Rising/Steady/Falling
+//Convert Weather Underground Barometric Pressure Code Rising/Steady/Falling
 function convertBarometerCode(code) {
     switch(code) {
         case "0": return "wi-direction-left";
