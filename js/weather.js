@@ -102,7 +102,7 @@ function convertBarometerCode(code) {
     switch(code) {
         case "0": return "wi-direction-left";
         case "+": return "wi-direction-up";
-        case "-": return "wi-directio-down";
+        case "-": return "wi-direction-down";
         default: return "wi-na";
     }    
 }
