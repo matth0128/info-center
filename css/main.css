@@ -83,8 +83,15 @@ body {
     border: none;
 }
 
+/* REFRESH BUTTON */
+#refresh_button:disabled {
+    color: #777777;    
+}
+
 /* BUTTONS */
 button {
+    font-family: '../font/BebasNeueRegular', Arial, Helvetica, sans-serif;
+    font-size: 20px;
     display: inline-block;
     position: relative;
     width: 150px;

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // ***** MAIN LOGIC ***** //
     // --- PANEL LOGIC --- //
     var panels = document.querySelectorAll(".info");
-    var items = document.querySelectorAll("button");
+    var items = document.querySelectorAll(".button");
     var lastVisiblePanel;
 
     for (var i=0; i<items.length; i++) {
@@ -12,8 +12,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // --- Refresh the Traffic Map Every 60 Seconds ---//
     setInterval(refreshTrafficMap, 60000);
-// ***** END MAIN LOGIC ***** //
+    
+    // --- Refresh Button ---//
+    //Refresh Button Event
+    document.getElementById("refresh_button").addEventListener("click", function() {location.reload();}, false);
 
+    //Enable the Refresh Button
+    setTimeout(function() {
+        document.getElementById("refresh_button").disabled = false;
+    }, 30000);
+    
+// ***** END MAIN LOGIC ***** //
+// ------=====----- //
 // ***** AUX FUNCTIONS ***** //
     //Cycle Slides
     function cycleSlides (e) {
