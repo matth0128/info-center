@@ -36,7 +36,7 @@
 	padding: 5px 10px 10px 20px;
 	height: 50px;
 	position: relative;
-	border-top: 5px solid #ef4f69;
+	border-top: 5px solid #5F9EA0;
 	border-bottom: 1px solid #ddd;
 }
 
@@ -87,7 +87,7 @@
 
 .custom-header nav span:before {
 	font-family: 'fontawesome-selected';
-	color: #ef4f69;
+	color: #5F9EA0;
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -129,7 +129,7 @@
 	width: 20px;
 	height: 20px;
 	text-align: center;
-	background: #ef4f69;
+	background: #5F9EA0;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	cursor: pointer;
 	line-height: 13px;
@@ -158,7 +158,7 @@
 	padding: 20px;
 	background: #fff;
 	border-bottom: 1px solid #ddd;
-	border-top: 5px solid #ef4f69;
+	border-top: 5px solid #5F9EA0;
 	box-shadow: 0 1px rgba(255,255,255,0.9);
 	margin-bottom: 30px;
 }
@@ -168,7 +168,7 @@
 }
 
 .custom-content-reveal a {
-	color: #ef4f69;
+	color: #5F9EA0;
 }
 
 .custom-content-reveal a:hover {
@@ -187,7 +187,7 @@
 
 .fc-calendar .fc-head {
 	background: transparent;
-	color: #ef4f69;
+	color: #5F9EA0;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -213,7 +213,7 @@
 }
 
 .fc-calendar .fc-row > div.fc-today {
-	background: #ef4f69;
+	background: #5F9EA0;
 	box-shadow: inset 0 -1px 1px rgba(0,0,0,0.1);
 }
 
@@ -240,7 +240,7 @@
 }
 
 .fc-calendar .fc-row > div.fc-content:hover:after{
-	color: #ef4f69;
+	color: #5F9EA0;
 }
 
 .fc-calendar .fc-row > div.fc-today.fc-content:hover:after{
