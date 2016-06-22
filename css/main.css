@@ -10,8 +10,8 @@
 }
 
 body, html { 
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -23,7 +23,7 @@ body {
 
 /* CONTAINER */
 .left, .right {
-    height: 100%;
+    height: 100vh;
     padding: 5px 0;
     display: block;
 }
@@ -46,40 +46,43 @@ body {
 
 /* TRAFFIC MAP  */
 #traffic-map {
-    height: 97%;
-    width: 82%;
+    height: 97vh;
+    width: 69vw;
+    padding-top: .5%;
     position: fixed;
 }
 #traffic-map > iframe {
     display: block;
-    height: 97%;
-    width: 82%;
+    height: 97vh;
+    width: 69vw;
     border: none;
 }
 
 /* WEATHER */
 #weather {
-    height: 97%;
-    width: 82%;
+    height: 97vh;
+    width: 69vw;
+    padding-top: .5%;
     position: fixed;
 }
 #weather > iframe {
     display: block;
-    height: 97%;
-    width: 82%;
+    height: 97vh;
+    width: 69vw;
     border: none;
 }
 
 /* CALENDAR */
 #calendar {
-    height: 97%;
-    width: 82%;
+    height: 97vh;
+    width: 69vw;
+    padding-top: .5%;
     position: fixed;
 }
 #calendar > iframe {
     display: block;
-    height: 97%;
-    width: 82%;
+    height: 97vh;
+    width: 69vw;
     border: none;
 }
 
@@ -94,7 +97,7 @@ button {
     font-size: 20px;
     display: inline-block;
     position: relative;
-    width: 150px;
+    width: 65%;
     border: 2px solid #fff;
     color: #fff;
     border-radius: 3px;

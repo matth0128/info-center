@@ -19,27 +19,27 @@ body {
 #weather_box {
     color: #000000;
     border-radius: 15px 0px 50px 0px;
-    width: 520px;
-    height: 450px;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
 }
 
 #weather_box .box1 {
     background: #FFFFFF;
     border-radius: 15px 0px 0px 0px;
-    height: 300px;
+    height: 63vh;
 }
 
 #weather_box .box2 {
     background: #CCCCCC;
     border-radius: 0px 0px 0px 50px;
-    height: 150px;
+    height: 37vh;
 }
 
 #weather_box .box3 {
     background: #5F9EA0;
     border-radius: 0px 50px 15px 0px;
-    height: 450px;
+    height: 100vh;
 }
 /***** END BOX GRID *****/
 
@@ -88,7 +88,7 @@ body {
 /** FORECAST **/
 .forecast {
     margin: 15px 0px 0px 0px;
-    height: 130px;
+    height: 30vh;
     font-size: 20px;
 }
 /***** END BOX 3 *****/
