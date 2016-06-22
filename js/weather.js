@@ -32,9 +32,9 @@ function getWeather() {
         $("#current-conditions-icon").html("<img src='"+convertWeatherIconLink(weather.icon_url)+"'/>");
         //Inject Wind Speed/Direction Icon
         var wind_direction = weather.wind_dir.toLowerCase();
-        $("#wind-speed-direction").addClass("wi-towards-"+wind_direction);
+        $("#wind-speed-direction").attr("class", "wi wi-wind-direction wi-towards-"+wind_direction);
         //Inject Pressure Rising/Steady/Falling Icon
-        $("#pressure-state").addClass(convertBarometerCode(weather.pressure_trend));
+        $("#pressure-state").attr("class", "wi wi-wind-direction "+convertBarometerCode(weather.pressure_trend));
     });
 
     //----- ASTRONOMY -----//
