@@ -1,38 +1,37 @@
 #date {
-    padding: 40px 0px 0px 0px;
-    font-size: 24px;
+    padding: 10% 0% 0% 0%;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 #clock {
-    padding: 10px;
+    padding: 5%;
 }
 
 #point {
     position: relative;
     -moz-animation: mymove 1s ease infinite;
     -webkit-animation: mymove 1s ease infinite;
-    padding: 0px 3px 0px 3px;
+    padding: 0% 1% 20% 1%;
 }
 
 ul {
     width: 100%;
     margin: 0 auto;
-    padding: 0px;
     list-style: none;
     text-align: center;
 }
 
 ul li {
     display: inline;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 /* Simple Animation */
 @-webkit-keyframes mymove {
     0% {
         opacity: 1.0;
-        text-shadow: 0 0 20px #00c6ff;
+        text-shadow: 0 0 5% #00c6ff;
     }
 
     50% {
@@ -42,14 +41,14 @@ ul li {
 
     100% {
         opacity: 1.0;
-        text-shadow: 0 0 20px #00c6ff;
+        text-shadow: 0 0 5% #00c6ff;
     }	
 }
 
 @-moz-keyframes mymove {
     0% {
         opacity: 1.0;
-        text-shadow: 0 0 20px #00c6ff;
+        text-shadow: 0 0 5% #00c6ff;
     }
 
     50% {
@@ -59,6 +58,6 @@ ul li {
 
     100% {
         opacity: 1.0;
-        text-shadow: 0 0 20px #00c6ff;
+        text-shadow: 0 0 5% #00c6ff;
     }
 }
