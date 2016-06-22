@@ -28,13 +28,13 @@ body {
 #weather_box .box1 {
     background: #FFFFFF;
     border-radius: 15px 0px 0px 0px;
-    height: 63vh;
+    height: 65vh;
 }
 
 #weather_box .box2 {
     background: #CCCCCC;
     border-radius: 0px 0px 0px 50px;
-    height: 37vh;
+    height: 35vh;
 }
 
 #weather_box .box3 {
@@ -47,50 +47,50 @@ body {
 /***** BOX 1 *****/
 /** LOCATION **/
 #location {
-    font-size: 40px;
+    font-size: 3.5rem;
 }
 
 /** CURRENT CONDITIONS ICON **/
 #current-conditions-icon {
-    font-size: 70px;
+    font-size: 4rem;
 }
 
 /** CURRENT CONDITIONS TEXT **/
 #current-conditions-text {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 /** HIGH/LOW TEMP **/
 #high-low-temp {
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 /** SOLAR **/
 #solar-times {
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 /***** END BOX 1 *****/
 
 /***** BOX 2 *****/
 /** TEMP **/
 #temp {
-    padding: 15px 0px 0px 30px;
-    font-size: 82px;
+    padding: 5% 0% 0% 6%;
+    font-size: 7.75rem;
 }
 
 /** ATOMSPHERE **/
 #atomsphere {
-    margin: 15px 0px 0px 0px;
-    font-size: 28px;
+    margin: 4% 0% 0% 0%;
+    font-size: 2.75rem;
 }
 /***** END BOX 2 *****/
 
 /***** BOX 3 *****/
 /** FORECAST **/
 .forecast {
-    margin: 15px 0px 0px 0px;
-    height: 30vh;
-    font-size: 20px;
+    margin: 8% 0% 0% 0%;
+    height: 25vh;
+    font-size: 2.1rem;
 }
 /***** END BOX 3 *****/
 /********** END WEATHER BOX **********/
