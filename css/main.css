@@ -10,8 +10,8 @@
 }
 
 body, html { 
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -23,8 +23,8 @@ body {
 
 /* CONTAINER */
 .left, .right {
-    height: 100vh;
-    padding: 5px 0;
+    height: 100%;
+    padding:  .5% 0;
     display: block;
 }
 .left {
@@ -53,8 +53,8 @@ body {
 }
 #traffic-map > iframe {
     display: block;
-    height: 97vh;
-    width: 69vw;
+    height: 100%;
+    width: 100%;
     border: none;
 }
 
@@ -67,8 +67,8 @@ body {
 }
 #weather > iframe {
     display: block;
-    height: 97vh;
-    width: 69vw;
+    height: 100%;
+    width: 100%;
     border: none;
 }
 
@@ -81,8 +81,8 @@ body {
 }
 #calendar > iframe {
     display: block;
-    height: 97vh;
-    width: 69vw;
+    height: 100%;
+    width: 100%;
     border: none;
 }
 
