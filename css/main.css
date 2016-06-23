@@ -98,12 +98,12 @@ button {
     display: inline-block;
     position: relative;
     width: 65%;
-    border: 2px solid #fff;
+    border: 5% solid #fff;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 6%;
     background-color: transparent;
-    margin: 5px;
-    height: 55px;
+    margin: 2%;
+    height: 12vh;
 }
 
 /* ANAMATIONS */
