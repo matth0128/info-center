@@ -88,9 +88,9 @@ body {
 /***** BOX 3 *****/
 /** FORECAST **/
 .forecast {
-    margin: 8% 0% 0% 0%;
+    margin: 12% 0% 0% 0%;
     height: 25vh;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
 }
 /***** END BOX 3 *****/
 /********** END WEATHER BOX **********/
