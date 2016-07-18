@@ -76,14 +76,14 @@ body {
     border: none;
 }
 
-/* CALENDAR */
-#calendar {
+/* ALERTS */
+#alerts {
     height: 97vh;
     width: 69vw;
     padding-top: .5%;
     position: fixed;
 }
-#calendar > iframe {
+#alerts > iframe {
     display: block;
     height: 100%;
     width: 100%;
