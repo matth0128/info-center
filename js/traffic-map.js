@@ -40,6 +40,7 @@ function initMap() {
             routeData = routeData.concat(parseRouteDetails(result));
             //directionsDisplay.setPanel(document.getElementById('panel'));
             //directionsDisplay.setDirections(result);
+            updateTrafficDataDiv(routeData);
         }
     });
     var request = {
@@ -55,7 +56,7 @@ function initMap() {
             routeData = routeData.concat(parseRouteDetails(result));
             //directionsDisplay.setPanel(document.getElementById('panel'));
             //directionsDisplay.setDirections(result);
-            console.dir(routeData);
+            updateTrafficDataDiv(routeData);
         }
     });
     //directionsDisplay.setMap(map);
@@ -79,5 +80,14 @@ function parseRouteDetails(rawData){
         };
     }
     return data;
+}
+
+function updateTrafficDataDiv(routeData){
+    var htmlString;
+    for(i = 0; i < routeData; i++){
+        htmlString = htmlString.concat("one");
+        $("#trafficDataDiv").html(htmlString);
+    }
+    
 }
 //***** END UTILITY FUNCTIONS *****//

@@ -4,18 +4,12 @@
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <meta charset="utf-8">
         <title>Traffic layer</title>
-        <!-- Google Map Styling -->
-        <style>
-            html, body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            #map {
-                height: 100%;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>        
+        <link rel="stylesheet" type="text/css" href="css/traffic-map.css"/>
+        
         <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/config.js"></script>
         <script>
             //Inject the Google Maps API Link
@@ -24,7 +18,13 @@
         <script type="text/javascript" src="js/traffic-map.js"></script>
     </head>
     <body>
-        <div id="panel"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <div id="trafficDataDiv"></div>
+                </div>
+            </div>
+        </div>
         <div id="map"></div>
     </body>
 </html>
